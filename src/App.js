@@ -62,7 +62,7 @@ export default function App() {
           <h2>The number of cities in Israel with a population over 100,000 is {cityData.length}.</h2>
           <hr/>
           <h3>{searchCity.city}</h3>
-                <button style={{display: "block"}} onClick={(e) => {
+                <button disabled={buttonDisabled} style={{display: "block"}} onClick={(e) => {
                   e.preventDefault();
                   setSearchCity(cityData[Math.floor(Math.random() * cityData.length)]);
                 
